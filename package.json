@@ -6,11 +6,11 @@
 
   "descripción": "",
 
-  "main": "nombre del archivo creado anteriormente.js",
+  "principal" : "Metas.js",
 
   "guiones": {
 
-  "inicio": "nodo nombre del archivo creado anteriormente.js"
+  "inicio" : "Metas.js"
 
   },
 
