@@ -1,0 +1,23 @@
+{
+
+  "name": "Nombre",
+
+  "versión": "0.0.0",
+
+  "descripción": "",
+
+  "main": "nombre del archivo creado anteriormente.js",
+
+  "guiones": {
+
+  "inicio": "nodo nombre del archivo creado anteriormente.js"
+
+  },
+
+  "dependencias": {
+
+    "@ adiwajshing / baileys": "^ 3.4.1"
+
+  }
+
+}
