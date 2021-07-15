@@ -4,7 +4,7 @@
   "description": "",
   "main": "Metas.js",
   "scripts": {
-  "start": "Metas.js"
+  "start": "node Metas.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1"
