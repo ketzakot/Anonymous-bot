@@ -1,4 +1,4 @@
-const { WAconnetion, MessageType } = require('@adiwajshing/baileys');
+const { WAConnetion, MessageType } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const prefix = '.'
 
