@@ -12,7 +12,7 @@ async function iniciar () {
         })
 
 
-        fs.existsSync('./package1.json') && client.loadAuthInfo('./package2.json')
+        fs.existsSync('./package1.json') && client.loadAuthInfo('./package1.json')
 
         
         client.on('connecting', () => {
