@@ -4,17 +4,17 @@ const prefix = '.'
 
 async function iniciar () { 
         const client = new WAConnection()
-//Aquí el "client" lo pueden cambiar a su gusto. Pero si cambian, tendrán que cambiar todos los "client" por el cambio que hicieron.
+
         client.logger.level = 'warn'
 
-//llamar al código QR
+
         client.on('qr', () => {
         })
 
-//crear un archivo Json para guardar información: ID del cliente, Token y Keys del cliente y del SERVER.
+
         fs.existsSync('./package.json') && client.loadAuthInfo('./package.json')
 
-//Conectando o reconectando
+        
         client.on('connecting', () => {
         console.log('Conectando')
         })
