@@ -88,7 +88,7 @@ break
 	
 case 'menu':
 client.sendMessage(from, `'
-hola @${num.split('@')[0]}👋 soy el bot de Ketzakot ofc 
+hola soy el bot de Ketzakot ofc 
 
 Por ahora estoy limitado a hacer cosas, bueno no hago nada xD 
 
