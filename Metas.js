@@ -84,7 +84,26 @@ break
 
 case 'menu':
 client.sendMessage(from, 'el bot todabia no hace nada pero segun me valla enseñando samu330 ire agregandole cosas gracias por su comprencion', text, {quoted : ketza})
-break               
+break          
+
+//HIDETAG
+case prefix+ 'hidetag':
+			if (!mek.key.fromMe) return fakestatus('SELF-BOT')
+			if (!isGroup) return reply(mess.only.group)
+			var value = args.join(' ')
+			var group = await FxBot.groupMetadata(from)
+			var member = group['participants']
+			var mem = []
+			member.map(async adm => {
+			mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+			})
+			var optionshidetag = {
+			text: value,
+			contextInfo: { mentionedJid: mem },
+			quoted: mek
+			}
+			FxBot.sendMessage(from, optionshidetag, text)
+			break                
 }
 
 } catch (e) {
