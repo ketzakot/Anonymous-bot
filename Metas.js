@@ -81,7 +81,10 @@ switch (command) {
 case 'bot':
 client.sendMessage(from, 'Hola,felicidades, has logrado enviar un mensaje mediante un servidor externo😚', text, {quoted : ketza})
 break
-                
+
+case 'menu':
+client.sendMessage(from, 'el bot todabia no hace nada pero segun me valla enseñando samu330 ire agregandole cosas gracias por su comprencion', text, {quoted : ketza})
+break               
 }
 
 } catch (e) {
