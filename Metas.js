@@ -96,3 +96,20 @@ console.log(e)}
 iniciar ()
 .catch (err => console.log("unexpected error: " + err))
 
+
+//TEXTO A VOZ GOOGLE
+case prefix+ 'tts':
+case prefix+ 'gtts':
+case 'tts':
+if (args.length < 1) return ketza.sendMessage(from, `Debes usar el comando correctamente:\n${prefix}tts (lengua) (texto)\nEjemplo: ${prefix}tts Buen dia abortos\n\nUse: ${prefix}ts para enumerar todos los idiomas`, text, {quoted: mek})
+const gtts = require('./ketza/gtts')(args[0])
+if (args.length < 2) return ketza.sendMessage(from, 'Y El Texto?', text, {quoted: mek})
+dtt = body.slice(8)
+ranm = getRandom('.mp3')
+dtt.length > 800
+? reply('¿Quieres Escribir La Biblia?')
+: gtts.save(ranm, dtt, function() {
+ketza.sendMessage(from, fs.readFileSync(ranm), audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+fs.unlinkSync(ranm)
+})
+break
