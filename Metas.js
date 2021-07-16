@@ -87,19 +87,25 @@ client.sendMessage(from, 'el bot todabia no hace nada pero segun me valla enseñ
 break  
 	
 case 'menu':
-client.sendMessage(from, `'
-hola soy el bot de Ketzakot ofc 
+client.sendMessage(from, ` 
+┏━━━━━━━━━━━━━┓
+∝╬→Prefix 『 . 』/ᵖᵘⁿᵗᵒ\
+∝╬→𝙼𝚒 𝚌𝚛𝚎𝚊𝚍𝚘𝚛『Ketzakor』
+∝╬→
+∝╬→
+━━━━━━━━━━━━━
+¡Hola!『Soy el bot ketzakot』
+━━━━━━━━━━━━━
+╭───────╯•╰───────╮
+『 MENU 』
+∝╬⊰Por ahora tengo "0" comandos 』
 
-Por ahora estoy limitado a hacer cosas, bueno no hago nada xD 
-
-Solo puedo responder con textos mientras 
-
-Aqui el numero de ketzakot para que le hables y pues si quieres le digas que me  agregue un comando (recuerda solo puedo enviar textos mientras)
-
-Ten una linda (mañana) (tarde) o (noche)
- '`, text, {quoted : ketza
+¯\_(ツ)_/¯ :D xD
+ 
+❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐❏ ❐ 
+`, text, {quoted : ketza
 })
-break	
+break
 		
 }
 
