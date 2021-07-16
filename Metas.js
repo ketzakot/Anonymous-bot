@@ -79,12 +79,27 @@ const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vna
 switch (command) {
 
 case 'bot':
-client.sendMessage(from, 'Hola,felicidades, has logrado enviar un mensaje mediante un servidor externo😚', text, {quoted : ketza})
+client.sendMessage(from, 'hola si dime q quieres @${num.split('@')[0]}', text, {quoted : ketza})
 break
 
-case 'menu':
+case 'info':
 client.sendMessage(from, 'el bot todabia no hace nada pero segun me valla enseñando samu330 ire agregandole cosas gracias por su comprencion', text, {quoted : ketza})
-break          
+break  
+	
+case 'menu':
+client.sendMessage(from, `'
+hola @${num.split('@')[0]}👋 soy el bot de Ketzakot ofc 
+
+Por ahora estoy limitado a hacer cosas, bueno no hago nada xD 
+
+Solo puedo responder con textos mientras 
+
+Aqui el numero de ketzakot para que le hables y pues si quieres le digas que me  agregue un comando (recuerda solo puedo enviar textos mientras)
+
+Ten una linda (mañana) (tarde) o (noche)
+ '`, text, {quoted : ketza
+})
+break	
 		
 }
 
