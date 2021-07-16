@@ -79,7 +79,7 @@ const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vna
 switch (command) {
 
 case 'bot':
-client.sendMessage(from, 'hola si dime q quieres @${num.split('@')[0]}', text, {quoted : ketza})
+client.sendMessage(from, 'hola si dime q quieres', text, {quoted : ketza})
 break
 
 case 'info':
