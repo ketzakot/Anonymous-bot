@@ -104,6 +104,8 @@ client.sendMessage(from, `
 ∝╬⊰Por ahora tengo "0" comandos 』
 
 ¯\_(ツ)_/¯ :D xD
+
+❤️ 𝗸𝗲𝘁𝘇𝗮𝗸𝗼𝘁 & 𝗺𝗼𝗻𝘁𝘀𝗲𝗿𝗿𝗮𝘁 ❤️
  
 ❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐❏ ❐ 
 `, text, {quoted : ketza
