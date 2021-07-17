@@ -89,7 +89,7 @@ break
 case 'menu':
 client.sendMessage(from, ` 
 ┏━━━━━━━━━━━━━┓
-∝╬→Prefix 『.』
+∝╬→Prefix 『 . 』
 
 ∝╬→𝙼𝚒 𝚌𝚛𝚎𝚊𝚍𝚘𝚛『Ketzakor』
 
