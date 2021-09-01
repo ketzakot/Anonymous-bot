@@ -77,7 +77,18 @@ const conts = ketza.key.fromMe ? client.user.jid : client.contacts[sender] || { 
 const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
 switch (command) {
-
+		
+case 'foto':
+const imagen = fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')
+client.sendMessage(from, imagen, MessageType.image{quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')}}
+}})
+break 
+	
 case 'bot':
 client.sendMessage(from, 'hola si dime q quieres', text, {quoted : ketza})
 break
