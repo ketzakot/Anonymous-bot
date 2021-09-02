@@ -50,7 +50,7 @@ budy = (type === 'conversation' && ketza.message.conversation.startsWith(prefix)
 if (prefix != "") {
 if (!body.startsWith(prefix)) {
 cmd = false
-comm = ""
+comm = "."
 } else {
 cmd = true
 comm = body.slice(1).trim().split(" ").shift().toLowerCase()
@@ -76,8 +76,7 @@ const isMe = senderNumber == botNumber
 const conts = ketza.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
-switch (command) {
-		
+switch (command) {		
 case 'foto':
 const imagen = fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')
 client.sendMessage(from, imagen, MessageType.image{quoted: { key: {
@@ -85,17 +84,9 @@ fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')}}
+"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
 break 
-	
-case 'bot':
-client.sendMessage(from, 'hola si dime q quieres', text, {quoted : ketza})
-break
-
-case 'info':
-client.sendMessage(from, 'el bot todabia no hace nada pero segun me valla enseñando samu330 ire agregandole cosas gracias por su comprencion', text, {quoted : ketza})
-break  
 	
 case 'menu':
 client.sendMessage(from, ` 
