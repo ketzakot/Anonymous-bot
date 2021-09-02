@@ -76,7 +76,8 @@ const isMe = senderNumber == botNumber
 const conts = ketza.key.fromMe ? client.user.jid : client.contacts[sender] || { notify: jid.replace(/@.+/, '') }
 const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vname || conts.name || '-'
 
-switch (command) {		
+switch (command) {
+		
 case 'foto':
 const imagen = fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')
 client.sendMessage(from, imagen, MessageType.image{quoted: { key: {
