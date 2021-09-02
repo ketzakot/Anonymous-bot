@@ -106,8 +106,8 @@ message: {
 }
 
 case 'video':
-const video = fs.readFileSync('./media/video/')
-client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'video by ktz', duration: 999999999})
+const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
+client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'xdddd', duration: 999999999})
 break
 		
 case 'menu':
