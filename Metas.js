@@ -107,7 +107,7 @@ message: {
 
 case 'audio':
 const audio = fs.readFileSync('./media/audio/audioM.mp3')
-client.sendMessage(from, audio, MessageType.audio{quoted : ketza, ptt: true}) 
+client.sendMessage(from, audio, MessageType.audio{quoted: ketza, ptt: true}) 
 
 break	
 		
