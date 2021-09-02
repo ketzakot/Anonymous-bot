@@ -107,7 +107,13 @@ message: {
 
 case 'video':
 const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
-client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'xdddd', duration: 999999999})
+client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'xdddd', duration: 999999999}){ key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "ketza + Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
+}}
 break
 		
 case 'menu':
