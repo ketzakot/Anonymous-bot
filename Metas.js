@@ -80,7 +80,7 @@ switch (command) {
 		
 case 'foto':
 const imagen = fs.readFileSync('media/imagen/FB_IMG_1627361239763.jpg')
-client.sendMessage(from, imagen, MessageType.image{quoted: { key: {
+client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
