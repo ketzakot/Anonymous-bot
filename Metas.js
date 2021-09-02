@@ -88,7 +88,16 @@ message: {
 "documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
 break 
-	
+		
+	if(body.includes('bot')) {
+client.sendMessage(from, 'Hola!', MessageType.text, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "ketza", 'jpegThumbnail': fs.readFileSync('./')}}
+}})
+}
 case 'menu':
 client.sendMessage(from, ` 
 
