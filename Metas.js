@@ -105,10 +105,10 @@ message: {
 }})
 }
 
-case 'audio':
-const audio = fs.readFileSync('./media/audio/audioM.mp3')
-client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, ptt: true}) 
-break	
+case 'video':
+const video = fs.readFileSync('./media/video/')
+client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'video by ktz', duration: 999999999})
+break
 		
 case 'menu':
 client.sendMessage(from, ` 
