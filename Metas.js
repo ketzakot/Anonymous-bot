@@ -107,7 +107,7 @@ message: {
 
 case 'video':
 const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
-client.sendMessage(from, video, MessageType.video, {quoted: sam, mimetype: 'video/mp4', caption: 'JAJAJA', duration: 999999999})
+client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'JAJAJA', duration: 999999999})
 break
 		
 case 'menu':
