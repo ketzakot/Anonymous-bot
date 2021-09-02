@@ -87,9 +87,14 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : 
 message: {
 "documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
-break 
+break 	
+case 'audio':
+const audio = fs.readFileSync('./media/audio/audioM')
+client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})
+client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999})                
+break
 		
-	if(body.includes('bot')) {
+if(body.includes('hola')) {
 client.sendMessage(from, 'Hola!', MessageType.text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
