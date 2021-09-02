@@ -104,6 +104,13 @@ message: {
 "documentMessage": { "title": "ketza", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
 }
+
+case 'audio':
+const audio = fs.readFileSync('./media/audio/audioM.mp3')
+client.sendMessage(from, audio, MessageType.audio{quoted : ketza, ptt: true}) 
+
+break	
+		
 case 'menu':
 client.sendMessage(from, ` 
 
