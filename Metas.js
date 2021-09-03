@@ -90,7 +90,7 @@ message: {
 break 	
 		
 case 'audioM': 
-const audio = fs.readFileSync('./media/audio/audioM.mp3')
+const audio = fs.readFileSync('./media/audio/baka.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999})                
 break
