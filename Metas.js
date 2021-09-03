@@ -78,21 +78,31 @@ const pushname = ketza.key.fromMe ? client.user.name : conts.notify || conts.vna
 
 switch (command) {
 		
-case 'foto':
+case 'fotok':
 const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')
 client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
+"documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
 break 	
 		
-case 'audioM': 
+case 'fotom':
+const imagen = fs.readFileSync('./media/imagen/')
+client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
+}})
+break
+		
+case 'audio': 
 const audio = fs.readFileSync('./media/audio/baka.mp3')
-client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})
-client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999})                
+client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
 break
 		
 if(body.includes('hola')) {
