@@ -90,7 +90,7 @@ message: {
 break 	
 		
 case 'fotom':
-const imagen = fs.readFileSync('./media/imagen/')
+const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361242201.jpg')
 client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
