@@ -87,10 +87,10 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : 
 message: {
 "documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
-break 	
-		
-case 'fotom': 
-const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361247656.jpg')
+break 
+
+case 'fotom':
+const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')
 client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
@@ -98,7 +98,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : 
 message: {
 "documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
 }})
-break
+break 	
 		
 case 'audio': 
 const audio = fs.readFileSync('./media/audio/baka.mp3')
