@@ -89,6 +89,17 @@ message: {
 }})
 break 
 		
+{quoted : ketza 'foto':
+const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')
+client.sendMessage(from, imagen, MessageType.image{quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
+}})
+break 
+		
 case 'audio': 
 const audio = fs.readFileSync('./media/audio/baka.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
