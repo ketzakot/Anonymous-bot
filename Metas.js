@@ -139,7 +139,7 @@ fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "ketza y montse", 'jpegThumbnail': fs.readFileSync('./media/logos/')}}
+"documentMessage": { "title": "ketza y montse", 'jpegThumbnail': fs.readFileSync('./media/logos/logo.jpg')}}
 }}
 break
 		
