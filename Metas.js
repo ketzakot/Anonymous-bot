@@ -89,7 +89,7 @@ message: {
 }})
 break 	
 		
-case 'fotom':
+case 'fotom': 
 const imagen = fs.readFileSync('./media/imagen/FB_IMG_1627361247656.jpg')
 client.sendMessage(from, imagen, MessageType.image,{quoted: { key: {
 fromMe: false,
