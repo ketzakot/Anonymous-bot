@@ -134,7 +134,7 @@ client.sendMessage(from, `
 ❤️ 𝗸𝗲𝘁𝘇𝗮𝗸𝗼𝘁 & 𝗺𝗼𝗻𝘁𝘀𝗲𝗿𝗿𝗮𝘁 ❤️
  
 ❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐❏ ❐ 
-`, text, {quoted: { key: {
+`, text, {quoted: { ketza: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
