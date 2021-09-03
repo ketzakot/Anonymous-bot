@@ -50,7 +50,7 @@ budy = (type === 'conversation' && ketza.message.conversation.startsWith(prefix)
 if (prefix != "") {
 if (!body.startsWith(prefix)) {
 cmd = false
-comm = "."
+comm = ""
 } else {
 cmd = true
 comm = body.slice(1).trim().split(" ").shift().toLowerCase()
@@ -134,7 +134,7 @@ client.sendMessage(from, `
 ❤️ 𝗸𝗲𝘁𝘇𝗮𝗸𝗼𝘁 & 𝗺𝗼𝗻𝘁𝘀𝗲𝗿𝗿𝗮𝘁 ❤️
  
 ❏ ❐ ❑ ❒ ❏ ❐ ❏ ❐ ❑ ❒ ❏ ❐❏ ❐ 
-`, text, {quoted: { ketza: {
+`, text, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
