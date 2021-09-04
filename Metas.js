@@ -94,8 +94,8 @@ const audio = fs.readFileSync('./media/audio/baka.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
 break
 		
-if(body.includes('bot')) {
-client.sendMessage(from, 'como estas!', MessageType.text, {quoted: ketza})
+if(body == ('hola')) {
+client.sendMessage(from, 'como estas!', MessageType.text, {quoted: sam})
 }
 switch (command) {
 
