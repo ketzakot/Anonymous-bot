@@ -111,7 +111,7 @@ fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/logo/logo.jpg')}}
+"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/logos/logo.jpg')}}
 }}) mimetype: 'audio/mp3', duration: -9999999, ptt: true})
                 
 break		
