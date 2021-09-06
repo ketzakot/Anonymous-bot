@@ -105,7 +105,7 @@ client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'vi
 break
 
 case 'audio':
-const audio = fs.readFileSync('./media/audio/audiom.mp3')
+const audio = fs.readFileSync('./media/audio/audioM.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
