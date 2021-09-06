@@ -103,29 +103,18 @@ case 'video':
 const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
 client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'JAJAJA', duration: 999999999})
 break
-		
-         case prefix+ 'play':
-			if (args.length === 0) return reply(`Escribe el nombre de la canción`)
-            var srch = args.join('')
-    		aramas = await yts(srch);
-    		aramat = aramas.all 
-   			var mulaikah = aramat[0].url							
-                  try {
-                    yta(mulaikah)
-                    .then((res) => {
-                        const { dl_link, thumb, title, filesizeF, filesize } = res
-                        axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
-                        .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_El archivo se está mandando no hagas spam_`)
-                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_El archivo se está mandando, si no llega descarga por el link_`
-                        sendMediaURL(from, thumb, captions)
-                        await sendMediaURL(from, dl_link).catch(() => reply('error'))
-                        })                
-                        })
-                        } catch (err) {
-                        reply(mess.error.api)
-                        }
-                   break  
+
+case 'audio':
+const audio = fs.readFileSync('./media/audio/audiom.mp3')
+client.sendMessage(from, audio, MessageType.audio, {quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/logo/logo.jpg')}}
+}}) mimetype: 'audio/mp3', duration: -9999999, ptt: true})
+                
+break		
 		
 case 'menu':
 client.sendMessage(from, ` 
