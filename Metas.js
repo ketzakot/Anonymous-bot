@@ -106,7 +106,7 @@ break
 
 case 'audio':
 const audio = fs.readFileSync('./media/audio/audioM.mp3')
-client.sendMessage(from, audio, MessageType.audio, {quoted: { key: {
+client.sendMessage(from, audio, MessageType.audio,{quoted: { key: {
 fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
