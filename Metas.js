@@ -85,7 +85,7 @@ fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
 },
 message: {
-"documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/imagen/FB_IMG_1627361239763.jpg')}}
+"documentMessage": { "title": "Ketza & Montse", 'jpegThumbnail': fs.readFileSync('./media/logos/logo.jpg')}}
 }})
 break 
 				
@@ -104,16 +104,9 @@ const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
 client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'JAJAJA', duration: 999999999})
 break
 
-case 'audio':
+case 'audio': 
 const audio = fs.readFileSync('./media/audio/audioM.mp3')
-client.sendMessage(from, audio, MessageType.audio,{quoted: { key: {
-fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
-},
-message: {
-"documentMessage": { "title": "Ketzakot", 'jpegThumbnail': fs.readFileSync('./media/logos/logo.jpg')}}
-}})
-               
+client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
 break		
 		
 case 'menu':
