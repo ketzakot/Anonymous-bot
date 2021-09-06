@@ -93,13 +93,12 @@ case 'audio':
 const audio = fs.readFileSync('./media/audio/baka.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
 break
-		
+				
 case 'video':
 const video = fs.readFileSync('./media/video/VID-20210706-WA0062.mp4')
 client.sendMessage(from, video, MessageType.video, {quoted: ketza, mimetype: 'video/mp4', caption: 'JAJAJA', duration: 999999999})
 break
 
-case 'audio': 
 const audio = fs.readFileSync('./media/audio/audioM.mp3')
 client.sendMessage(from, audio, MessageType.audio, {quoted: ketza, mimetype: 'audio/mp3', duration: -9999999, ptt: true})              
 break		
